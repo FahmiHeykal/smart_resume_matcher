@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<h3>Users</h3>
+<table class="table table-bordered">
+  <thead><tr><th>ID</th><th>Email</th><th>Role</th></tr></thead>
+  <tbody>
+    {% for u in users %}
+    <tr><td>{{ u.id }}</td><td>{{ u.email }}</td><td>{{ u.role }}</td></tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<h3>Job Postings</h3>
+<table class="table table-bordered">
+  <thead><tr><th>ID</th><th>Title</th><th>Required Skills</th></tr></thead>
+  <tbody>
+    {% for j in jobs %}
+    <tr><td>{{ j.id }}</td><td>{{ j.title }}</td><td>{{ j.required_skills }}</td></tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}
