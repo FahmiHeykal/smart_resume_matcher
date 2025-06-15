@@ -20,7 +20,7 @@ Smart Resume Matcher adalah API backend untuk mencocokkan resume (CV) dengan low
 ## Instalasi
 1. Clone repo: `git clone https://github.com/username/smart_resume_matcher.git && cd smart_resume_matcher`
 2. Buat virtual env: `python -m venv venv && source venv/bin/activate` (Linux/macOS) atau `.\venv\Scripts\activate` (Windows)
-3. Install dependensi: `pip install -r requirements.txt`
+3. Install dependensi : `pip install -r requirements.txt`
 4. Siapkan database PostgreSQL dan buat database baru
 5. Update koneksi database di `.env` atau `app/core/config.py`
 6. Jalankan: `uvicorn app.main:app --reload`
@@ -40,9 +40,9 @@ Smart Resume Matcher adalah API backend untuk mencocokkan resume (CV) dengan low
   - `GET /match/history/detail/{match_result_id}`
 
 ## Struktur Database
-- Resume: ID, nama, isi teks, skill, dan ringkasan
-- Job: ID, judul, deskripsi, skill dibutuhkan, lokasi, kategori
-- MatchResult: ID, resume_id, job_id, skor, waktu pencocokan
+- Resume : ID, nama, isi teks, skill, dan ringkasan
+- Job : ID, judul, deskripsi, skill dibutuhkan, lokasi, kategori
+- MatchResult : ID, resume_id, job_id, skor, waktu pencocokan
 
 ## Catatan
 - File `.env` harus disiapkan secara manual jika belum ada
